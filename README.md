@@ -45,7 +45,7 @@
 - Goto ConfigFiles -> execution_commands.txt and select specific command to execute the test case
 
 ### Example:
-- Open pycharm terminal (Alt+F12) and run following command to invoke the chrome browser locally
+- Open pycharm terminal (Alt+F12) and run following command to invoke the android app
     ```sh
     py.cleanup -p && py.test --platform=android --alluredir ExecutionReports/ & allure serve ExecutionReports
     ```
