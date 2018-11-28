@@ -1,0 +1,29 @@
+#### Local Commands #####
+
+## For local execution give --platform=local_android or local_ios
+
+py.cleanup -p && py.test --platform=android --alluredir ExecutionReports/ & allure serve ExecutionReports
+py.cleanup -p && py.test --platform=ios --alluredir ExecutionReports/ & allure serve ExecutionReports
+
+py.cleanup -p
+
+#### Grid Specific Commands ####
+
+## MAC
+
+py.cleanup -p && py.test TestScripts/test_manager.py --platform=android
+py.cleanup -p && py.test TestScripts/test_manager.py --platform=ios
+
+## WINDOWS
+
+py.cleanup -p && py.test TestScripts/test_manager.py --platform=android
+py.cleanup -p && py.test TestScripts/test_manager.py --platform=ios
+
+#### Cloud Specific Commands ####
+
+py.cleanup -p && py.test TestScripts/test_manager.py --platform=browser_stack
+py.cleanup -p && py.test TestScripts/test_manager.py --platform=sauce_labs
+
+#### Jenkins Specific ####
+
+py.cleanup -p && py.test TestScripts/test_manager.py --platform=$PLATFORM

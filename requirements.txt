@@ -1,0 +1,13 @@
+# Framework
+pytest
+selenium
+Appium-Python-Client
+pycmd
+
+# Reporting
+allure-pytest
+
+# Data Driven
+pyexcel
+pyexcel-xls
+pyexcel-xlsx

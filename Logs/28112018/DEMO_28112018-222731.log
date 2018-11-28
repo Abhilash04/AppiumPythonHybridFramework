@@ -1,0 +1,37 @@
+2018-11-28 22:27:46,309 - INFO - ###### TEST EXECUTION STARTED :: test_verify_main_screen_elements ######
+2018-11-28 22:27:47,038 - INFO - Element found with locator_properties: //android.widget.Button[@resource-id='com.example.android.prokabaddi:id/button_STackle'] and locator_type: xpath
+2018-11-28 22:27:47,281 - INFO - Element found with locator_properties: //android.widget.Button[@resource-id='com.example.android.prokabaddi:id/button_STackle_b'] and locator_type: xpath
+2018-11-28 22:27:47,496 - INFO - Element found with locator_properties: //android.widget.Button[@resource-id='com.example.android.prokabaddi:id/button_DRaid'] and locator_type: xpath
+2018-11-28 22:27:47,636 - INFO - Element found with locator_properties: //android.widget.Button[@resource-id='com.example.android.prokabaddi:id/button_Touch'] and locator_type: xpath
+2018-11-28 22:27:47,795 - INFO - Element found with locator_properties: //android.widget.Button[@resource-id='com.example.android.prokabaddi:id/button_Touch_b'] and locator_type: xpath
+2018-11-28 22:27:47,948 - INFO - Element found with locator_properties: //android.widget.Button[@resource-id='com.example.android.prokabaddi:id/button_AllOut'] and locator_type: xpath
+2018-11-28 22:27:48,033 - INFO - Element found with locator_properties: //android.widget.Button[@resource-id='com.example.android.prokabaddi:id/button_AllOut_b'] and locator_type: xpath
+2018-11-28 22:27:48,159 - INFO - Element found with locator_properties: //android.widget.Button[@resource-id='com.example.android.prokabaddi:id/button_Bonus'] and locator_type: xpath
+2018-11-28 22:27:48,276 - INFO - Element found with locator_properties: //android.widget.Button[@resource-id='com.example.android.prokabaddi:id/button_Bonus_b'] and locator_type: xpath
+2018-11-28 22:27:48,400 - INFO - Element found with locator_properties: //android.widget.Button[@resource-id='com.example.android.prokabaddi:id/button_Tackle'] and locator_type: xpath
+2018-11-28 22:27:48,511 - INFO - Element found with locator_properties: //android.widget.Button[@resource-id='com.example.android.prokabaddi:id/button_Tackle_b'] and locator_type: xpath
+2018-11-28 22:27:48,631 - INFO - Element found with locator_properties: //android.widget.Button[@text='RESET'] and locator_type: xpath
+2018-11-28 22:27:48,724 - INFO - Element found with locator_properties: //android.widget.TextView[@resource-id='com.example.android.prokabaddi:id/team_a_score'] and locator_type: xpath
+2018-11-28 22:27:48,812 - INFO - Element found with locator_properties: //android.widget.TextView[@resource-id='com.example.android.prokabaddi:id/team_b_score'] and locator_type: xpath
+2018-11-28 22:27:48,812 - INFO - ### VERIFICATION SUCCESSFUL :: Verify Presence of Main Screen Elements Successful
+2018-11-28 22:27:48,813 - INFO - ### Verify Presence of Main Screen Elements Successful### TEST SUCCESSFUL
+2018-11-28 22:27:48,836 - INFO - ###### TEST EXECUTION STARTED :: test_verify_supertackle_reset ######
+2018-11-28 22:27:48,968 - INFO - Element is clickable with locator_properties: //android.widget.Button[@resource-id='com.example.android.prokabaddi:id/button_STackle'] and locator_type: xpath
+2018-11-28 22:27:49,189 - INFO - Element found with locator_properties: //android.widget.Button[@resource-id='com.example.android.prokabaddi:id/button_STackle'] and locator_type: xpath
+2018-11-28 22:27:49,212 - INFO - Clicked on the element with locator_properties: //android.widget.Button[@resource-id='com.example.android.prokabaddi:id/button_STackle'] and locator_type: xpath
+2018-11-28 22:27:50,419 - INFO - Element found with locator_properties: //android.widget.TextView[@resource-id='com.example.android.prokabaddi:id/team_a_score'] and locator_type: xpath
+2018-11-28 22:27:50,439 - INFO - The text is: '2'
+2018-11-28 22:27:50,439 - INFO - Actual Text From Application Web UI --> :: 2
+2018-11-28 22:27:50,440 - INFO - Expected Text From Application Web UI --> :: 2
+2018-11-28 22:27:50,440 - INFO - ### VERIFICATION TEXT MATCHED !!!
+2018-11-28 22:27:50,440 - INFO - ### VERIFICATION SUCCESSFUL :: Verify Super Tackle Functionality
+2018-11-28 22:27:50,538 - INFO - Element is clickable with locator_properties: //android.widget.Button[@text='RESET'] and locator_type: xpath
+2018-11-28 22:27:50,724 - INFO - Element found with locator_properties: //android.widget.Button[@text='RESET'] and locator_type: xpath
+2018-11-28 22:27:50,747 - INFO - Clicked on the element with locator_properties: //android.widget.Button[@text='RESET'] and locator_type: xpath
+2018-11-28 22:27:52,234 - INFO - Element found with locator_properties: //android.widget.TextView[@resource-id='com.example.android.prokabaddi:id/team_a_score'] and locator_type: xpath
+2018-11-28 22:27:52,255 - INFO - The text is: '0'
+2018-11-28 22:27:52,255 - INFO - Actual Text From Application Web UI --> :: 0
+2018-11-28 22:27:52,255 - INFO - Expected Text From Application Web UI --> :: 0
+2018-11-28 22:27:52,255 - INFO - ### VERIFICATION TEXT MATCHED !!!
+2018-11-28 22:27:52,255 - INFO - ### VERIFICATION SUCCESSFUL :: Verify Reset Button Functionality
+2018-11-28 22:27:52,255 - INFO - ### Verify Reset Button Functionality### TEST SUCCESSFUL
