@@ -5,6 +5,7 @@ This module contains most of the reusable functions to support test cases.
 import os
 import time
 import logging
+from builtins import staticmethod
 from traceback import print_stack
 from selenium.common.exceptions import StaleElementReferenceException
 from appium.webdriver.common.mobileby import MobileBy
@@ -532,5 +533,43 @@ class UIHelpers():
 
         return destination_directory
 
+    def vertical_scroll(self, scroll_view, class_name, text):
+        """
+        This function is used for vertical scroll
+        :param scroll_view: class name for scrollView
+        :param class_name: class name for text view
+        :param text: text of the element
+        :return: this function returns nothing
+        """
+        try:
+            self.driver.find_element_by_android_uiautomator(
+                "new UiScrollable(new UiSelector().scrollable(true)" +
+                ".className(\"" + scroll_view + "\")).scrollIntoView(new UiSelector()" +
+                ".className(\"" + class_name + "\").text(\"" + text + "\"))")
+            self.log.info("Vertically scrolling into the view.")
+
+        except Exception as ex:
+            self.log.error("Exception occurred while vertically scrolling into the view: ", ex)
+
+
+    def horizontal_scroll(self, scroll_view, class_name, text):
+        """
+        This function is used for horizontal scroll
+        :param scroll_view: class name for scroll view
+        :param class_name: class name for text view
+        :param text: text of the element
+        :return: this function returns nothing
+        """
+        try:
+            self.driver.find_element_by_android_uiautomator(
+                "new UiScrollable(new UiSelector().scrollable(true)" +
+                ".className(\"" + scroll_view + "\")).setAsHorizontalList().scrollIntoView(new UiSelector()" +
+                ".className(\"" + class_name + "\").text(\"" + text + "\"))")
+            self.log.info("Horizontally scrolling into the view.")
+
+        except Exception as ex:
+            self.log.error("Exception occurred while horizontally scrolling into the view: ", ex)
+
+    @staticmethod
     def wait_for_sync(self, seconds=5):
         time.sleep(seconds)
